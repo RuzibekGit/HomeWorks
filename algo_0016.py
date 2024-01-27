@@ -1,6 +1,7 @@
+from math import e
 
 def f(x: float, y: float):
-    return (x + y) / ((y**2 + (y**2+2)/(x+y**(3/5)))**0.5) + (2.71828**(y+2))
+    return (x + y) / (y * y + abs((y*y+2)/(x+x**3/5))) + (e **(y+2))
 
 x, y = input().split()
 
