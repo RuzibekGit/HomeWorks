@@ -1,12 +1,14 @@
-def find_pairs(Z):
-    pairs = 0
-    for X in range(1, 11):
-        for Y in range(X, 11):  
-            if X * Y == Z:
-                pairs += 1
-    return pairs
+def count_pairs(Z):
+    count = 0
+    for X in range(Z+1):
+        if Z % X == 0:
+            Y = Z // X
+            if X <= Y:
+                count += 1
+    return count
+
+
 
 
 Z = -2
-pairs = find_pairs(Z)
-print(pairs)
+print(count_pairs(Z))
