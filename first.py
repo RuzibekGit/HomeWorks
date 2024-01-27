@@ -1,3 +1,3 @@
-print((h :="Hello World!"))
+print((h := "Hello World!"))
 for i in h:
-    print(h)
+    print(i)
