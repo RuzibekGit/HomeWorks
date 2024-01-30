@@ -1,0 +1,1 @@
+print(jami//2 if (jami:= int(input()))%4 == 0 else -1)
